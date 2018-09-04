@@ -1,0 +1,17 @@
+This is an example which shows a list retrieved from a data service.
+<hr/>
+
+<form #frm = "ngForm" (ngSubmit)="addNewItem(frm)">
+<div>
+	<input type="text" name="itemName" ngModel >
+	<button type="submit" name="button" class="btn btn-success">Add Item</button>
+</div>
+{{frm.value.itemName | json}}
+</form>
+
+<hr/>
+<button type="buttton" name = "button" class="btn btn-primary" (click) = "getItemsFromServiceClass()">Show List</button>
+
+<ul class = "list-group">
+	<li *ngFor="let item of itemsReceived" class="list-group-item">{{item}}</li>
+</ul>
