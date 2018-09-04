@@ -1,0 +1,14 @@
+<!-- <h2>
+	I am {{title}} <br/>
+	1+1 = {{1+1}} <br/>
+	{{returnString()}}
+</h2>
+<hr/>
+<img [src]="imageUrl"/>
+<hr/>
+<button type="button" name="button" (click)="changeValue()" >I am Button </button>
+-->
+<button type="button" name="button" (click)="changeImage()" >Change Image From First Component </button>
+<hr/> 
+
+<app-gotcharacter [imageUrlChild]="imageUrl"></app-gotcharacter>

@@ -1,0 +1,18 @@
+Below Image is in GOTCharacter Component
+<hr/>
+<img src="{{imageUrlChild}}"/>
+<ul class = "list-group">
+	<li class="list-group-item">{{GOTCharacter[0]}}</li>
+	<li class="list-group-item">{{GOTCharacter[1]}}</li>
+	<li class="list-group-item">{{GOTCharacter[2]}}</li>
+	<li class="list-group-item">{{GOTCharacter[3]}}</li>
+</ul>
+
+<button type="button" class="btn btn-primary" (click)="switchFirstAndLastName()" name = "button">Switch Names</button>
+
+<button type="button" class="btn btn-danger" (click)="stopSwitchFirstAndLastName()" name = "button">Stop</button>
+
+<div>
+	<input type="text" [(ngModel)]="twoWayData" [value]="twoWayData" >
+	{{twoWayData}}
+</div>
