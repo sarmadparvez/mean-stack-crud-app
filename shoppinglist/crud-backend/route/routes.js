@@ -8,7 +8,7 @@ router.get('/items', (req, res, next) => {
 	res.send('items route triggered');
 	Item.find(function(err, items){
 		if (err) {
-			res,json(err);
+			res.json(err);
 		} else {
 			res.json(items);
 		}
