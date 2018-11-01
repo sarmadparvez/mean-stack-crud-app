@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  
+  /**
+  * Called when a route is activated
+  */
+  onActivate (evt)
+  {
+    console.log('route is activated ', evt);
+  }
+
+  /**
+  * Called when route is deactivated
+  */
+  onDeactivate (evt)
+  {
+    console.log('route is deactivated ', evt);
+  }
+
 }
