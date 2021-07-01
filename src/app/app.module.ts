@@ -47,7 +47,7 @@ const ROUTES: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES),
+    RouterModule.forRoot(ROUTES, { relativeLinkResolution: 'legacy' }),
     ReactiveFormsModule
   ],
   providers: [DataService],
