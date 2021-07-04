@@ -17,6 +17,11 @@ Running the app through container `docker run -d -it -p 4201:80/tcp --name angul
 
 After that, to run the app in browser, open `http://localhost:4201`
 
+## dockerhub
+The application's image is also available publically on docker hub.
+
+`docker pull sarmadparvez/angular-crud` 
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
