@@ -27,7 +27,7 @@
     "hoek": "^5.0.4",
     "rxjs": "^6.6.7",
     "rxjs-tslint": "^0.1.8",
-    "url-parse": "^1.5.1",
+    "url-parse": "^1.5.9",
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
